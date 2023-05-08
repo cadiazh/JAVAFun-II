@@ -18,7 +18,7 @@ public class VentasApp {
         Map<String, List<Ventas>> ventasPorCiudad = generarVentasPorCiudad(ventasList);
 
         // Consultas específicas para la ciudad de New York
-        List<Ventas> ventasNY = obtenerVentasPorCiudad(ventasPorCiudad, "New York");
+        List<Ventas> ventasNY = obtenerVentasPorCiudad(ventasPorCiudad, "NY");
         double totalVentasNY = obtenerTotalVentas(ventasNY);
         List<Ventas> autosClasicosNY = obtenerVentasPorProducto(ventasNY, "Auto Clásico");
         double totalAutosClasicosNY = obtenerTotalVentas(autosClasicosNY);
