@@ -20,9 +20,9 @@ public class VentasApp {
         // Consultas específicas para la ciudad de New York
         List<Ventas> ventasNY = obtenerVentasPorCiudad(ventasPorCiudad, "NY");
         double totalVentasNY = obtenerTotalVentas(ventasNY);
-        List<Ventas> autosClasicosNY = obtenerVentasPorProducto(ventasNY, "Auto Clásico");
+        List<Ventas> autosClasicosNY = obtenerVentasPorProducto(ventasNY, "Classic Cars");
         double totalAutosClasicosNY = obtenerTotalVentas(autosClasicosNY);
-        List<Ventas> motocicletasNY = obtenerVentasPorProducto(ventasNY, "Motocicleta");
+        List<Ventas> motocicletasNY = obtenerVentasPorProducto(ventasNY, "Motorcycles");
         double totalMotocicletasNY = obtenerTotalVentas(motocicletasNY);
         String clienteMasAutosNY = obtenerClienteMasCompro(autosClasicosNY);
 
